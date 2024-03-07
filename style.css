@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 10% 10% 60% 20%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "header header header header"
+        "nav nav nav nav"
+        "aside main main main"
+        "footer footer footer footer"
+}
+
+
+
+
+
+
+
+
+header {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    grid-area: header;
+
+}
+
+nav {
+    background-color: lightgreen;
+    grid-area: nav;
+
+}
+
+nav>ul>li {
+    position: relative;
+    width: 100%;
+}
+
+nav ul ul {
+    position: absolute;
+    display: block;
+    background-color: green;
+    width: 100%;
+    padding: 0;
+}
+
+nav>ul>li:hover ul {
+    display: block;
+}
+
+nav ul ul li:hover {
+    background-color: red;
+}
+
+nav ul ul {
+    position: absolute;
+    display: block;
+    background-color: green;
+    width: 100%;
+    padding: 0;
+    opacity: 0;
+}
+
+nav>ul>li:hover ul {
+    opacity: 1;
+}
+
+nav ul ul {
+    position: absolute;
+    display: block;
+    background-color: white;
+    width: 100%;
+    padding: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+
+}
+
+nav ul ul {
+    position: absolute;
+    display: block;
+    background-color: green;
+    width: 100%;
+    padding: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+    pointer-events: none;
+  
+}
+
+nav>ul>li:hover ul {
+    opacity: 1;
+    pointer-events: auto;
+    
+}
+
+nav ul ul {
+    position: absolute;
+    display: block;
+    background-color: green;
+    padding: 0;
+    width: 100%;
+    transform: translate(0, -100%);
+}
+
+main {
+    background-color: lightskyblue;
+    color: white;
+    grid-area: main;
+
+}
+
+aside {
+    background-color: red;
+    grid-area: aside;
+}
+
+footer {
+    background-color: darkgreen;
+    color: white;
+    grid-area: footer;
+
+}
+
+
+li {
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
