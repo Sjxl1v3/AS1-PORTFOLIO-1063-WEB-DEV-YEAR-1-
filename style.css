@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'poppins', sans-serif;
 }
 
 html {
@@ -40,77 +41,6 @@ nav {
 
 }
 
-nav>ul>li {
-    position: relative;
-    width: 100%;
-}
-
-nav ul ul {
-    position: absolute;
-    display: block;
-    background-color: green;
-    width: 100%;
-    padding: 0;
-}
-
-nav>ul>li:hover ul {
-    display: block;
-}
-
-nav ul ul li:hover {
-    background-color: red;
-}
-
-nav ul ul {
-    position: absolute;
-    display: block;
-    background-color: green;
-    width: 100%;
-    padding: 0;
-    opacity: 0;
-}
-
-nav>ul>li:hover ul {
-    opacity: 1;
-}
-
-nav ul ul {
-    position: absolute;
-    display: block;
-    background-color: white;
-    width: 100%;
-    padding: 0;
-    opacity: 0;
-    transition: opacity 0.3s ease-in;
-
-}
-
-nav ul ul {
-    position: absolute;
-    display: block;
-    background-color: green;
-    width: 100%;
-    padding: 0;
-    opacity: 0;
-    transition: opacity 0.3s ease-in;
-    pointer-events: none;
-  
-}
-
-nav>ul>li:hover ul {
-    opacity: 1;
-    pointer-events: auto;
-    
-}
-
-nav ul ul {
-    position: absolute;
-    display: block;
-    background-color: green;
-    padding: 0;
-    width: 100%;
-    transform: translate(0, -100%);
-}
 
 main {
     background-color: lightskyblue;
@@ -140,3 +70,17 @@ nav ul {
     display: flex;
     justify-content: space-around;
 }
+
+nav ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: white;
+    display:block;
+    margin:auto;
+    transition: 0%;
+  }
+
+  nav ul li:hover::after {
+    width:100%;
+  }
