@@ -15,6 +15,7 @@ body {
 
 
 
+
 /* display nav on left */
 nav {
     display: block;
@@ -22,18 +23,20 @@ nav {
     top: 0;
     left: 50%;
     width: 50%;
-    height: 100vh;  
-    
+    height: 100vh;
+
 }
 
+
+
 /* Display list items vertically */
-nav ul {    
+nav ul {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     padding: 1em;
 }
-    
-    
+
+
 
 
 
@@ -64,8 +67,8 @@ nav ul {
     border-top: 0.2em solid white;
     border-bottom: 0.2em solid white;
     border-radius: 0.2em;
-    
-    
+
+
 }
 
 .showNav::before {
@@ -74,14 +77,13 @@ nav ul {
     width: 1.25em;
     margin-top: 0.3em;
     border-top: 0.2em solid #fff;
-    
-    
-    
+
+
+
 }
 
 #clicked:target nav {
     display: none
-    
 }
 
 li {
@@ -91,8 +93,8 @@ li {
 nav ul {
     display: flex;
     justify-content: space-around;
-    
-    
+
+
 }
 
 
