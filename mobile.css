@@ -10,7 +10,6 @@ body {
     grid-template-areas:
         "header"
         "main"
-        "aside"
         "footer"
 }
 
@@ -20,16 +19,19 @@ body {
 nav {
     display: block;
     position: fixed;
-    top:0 ;
-    left:50%;
-    width:50%;
+    top: 0;
+    left: 50%;
+    width: 50%;
     height: 100vh;
+    
+
 }
+
 
 
 #clicked .on {
     display: block;
-    
+
 }
 
 #clicked .off {
@@ -53,6 +55,7 @@ nav {
     border-top: 0.2em solid white;
     border-bottom: 0.2em solid white;
     border-radius: 0.2em;
+    
 }
 
 .showNav::before {
@@ -61,18 +64,26 @@ nav {
     width: 1.25em;
     margin-top: 0.3em;
     border-top: 0.2em solid #fff;
+    
 }
 
-#clicked:target nav{
-    display:none
+#clicked:target nav {
+    display: none
 }
 
+li {
+    list-style: none;
+}
 
+nav ul {
+    display: flex;
+    justify-content: space-around;
+}
 
 
 
 header {
-    background-color: blue;
+    background-color: #2a2a2a;
     color: white;
     padding: 20px;
     grid-area: header;
@@ -82,7 +93,7 @@ header {
 
 
 main {
-    background-color: lightskyblue;
+    background-color: #545454;
     color: white;
     grid-area: main;
 
@@ -94,19 +105,8 @@ aside {
 }
 
 footer {
-    background-color: darkgreen;
+    background-color: #2a2a2a;
     color: white;
     grid-area: footer;
 
 }
-
-
-li {
-    list-style: none;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-around;
-}
-
