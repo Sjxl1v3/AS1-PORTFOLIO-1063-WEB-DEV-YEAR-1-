@@ -24,6 +24,7 @@ nav {
     left: 50%;
     width: 50%;
     height: 100vh;
+    z-index:1;
 
 }
 
